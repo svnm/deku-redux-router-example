@@ -1,0 +1,14 @@
+.header {
+}
+.text {
+	color: white;
+}
+.button {
+    composes: button from '../../styles/common.css';
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: rgb(242, 242, 242);  
+}

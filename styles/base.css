@@ -1,0 +1,11 @@
+body {
+	background: radial-gradient(ellipse farthest-side at 100% 100%, #f8fff3 1%, #cef1ec 1%, #1380a0 120%);
+	height: 100vh;
+	color: #000;
+}
+
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
