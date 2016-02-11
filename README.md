@@ -3,16 +3,19 @@ an example of deku, redux and some very minimal routing
 
 - Uses a standalone Router, which may be possible to extend to a simple deku router.
 - Uses Deku 2.0.0, too bleeding edge
-- Not really sure how to test deku 2.0 components apologies
+- Not really sure how to test deku 2.0 components at this stage, apologies
 
 ## dependencies
 
 * **deku** `2.0.0`  
 * **redux** `3.0.5`
 * **babel** `6.1.0`
+* **webpack** `1.12.9`
 * **history** `2.0.0`
 * **express** `4.13.3`
 * **isomorphic-fetch** `2.2.0`
+* **postcss-loader** `0.7.0`
+* **ava** `0.11.0`
 * **css modules**
 
 ## Run Dev
