@@ -3,7 +3,7 @@ import fetch from 'isomorphic-fetch'
 
 export function fetchSurvey(path) {
   return dispatch => {
-    return fetch('http://127.0.0.1:3000/survey_results/1')
+    return fetch('http://127.0.0.1:3000/' + path)
       .then(req => req.json())
       .then(json => dispatch(receiveSurvey(json)))
   }

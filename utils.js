@@ -9,4 +9,9 @@ function toPercent (number) {
 	return (number.toFixed(2) * 100).toString() + '%'
 }
 
-module.exports = { isEmpty, toPercent }
+function isEmptyString(string) {
+    return (string.length === 0 || !string.trim());
+}
+
+module.exports = { isEmpty, toPercent, isEmptyString }
+

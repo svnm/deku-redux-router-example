@@ -1,10 +1,15 @@
 import {element} from 'deku'
 import {setParticipation} from '../../actions/card'
-import styles from './SurveyCard.css'
+import styles from './SurveyFullCard.css'
+import Theme from '../Theme/Theme.jsx'
 
 function render ({ props, children, context }) {
 
-  const { name, path } = props
+  const { name, path, themes } = props
+
+  let themeList = themes.map((t, i) => (
+    <Theme {...t} />
+  ))
 
   return (
     <div id={'card' + path} class={styles.card}>
@@ -14,13 +19,16 @@ function render ({ props, children, context }) {
           <h4 class={styles.text}>Participation</h4>
         </div>
       </div>
+      {themeList}
     </div>
   )
 }
 
 function onCreate ({ props, dispatch }) { 
   const { name, path } = props
-  requestAnimationFrame(mutate(path, props.response_rate, dispatch))
+  requestAnimationFrame( 
+    mutate(path, props.response_rate, dispatch)
+  )
 }
 
 function mutate ( path, percent, dispatch) {

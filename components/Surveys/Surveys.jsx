@@ -6,6 +6,7 @@ import SurveyCard from '../SurveyCard/SurveyCard.jsx'
 import Header from '../Header/Header.jsx'
 import {link} from '../../Router'
 import Survey from '../Survey/Survey.jsx'
+import Loader from '../Loader/Loader.jsx'
 
 export default {
 
@@ -19,17 +20,16 @@ export default {
 
     let component = null
 
-    if(utils.isEmpty(context.surveys.surveys)){
-      component = (<span>loading...</span>)
+    if(utils.isEmpty(context.surveys.results)){
+      component = (<Loader />)
     } else {
       /* survey results loaded */
-      component = context.surveys.surveys.map((s, i) => (
+      component = context.surveys.results.map((s, i) => (
         <a onClick={() => dispatch(link(s.url, Survey ))}>
           <SurveyCard key={i} {...s} path={i} />
         </a>
       ))
     }
-
 
     return (
       <div>
@@ -39,21 +39,3 @@ export default {
     )
   }
 }
-
-
-/*
-
-
-    if(utils.isEmpty(context.router.pathname)){
-      dispatch(getPathName())
-    }
-
-    if(location.pathname !== context.router.pathname){
-    }
-
-    if(utils.isEmpty(context.surveys.results)){
-      component = (<span>loading...</span>)
-    } else {
-    }
-
-*/

@@ -1,0 +1,12 @@
+@value colors: "../../styles/colors.css";
+@value white, gray, black from colors;
+
+.text {	
+   color: gray;
+}
+
+.star:before {
+   color: gray;
+   content: "\2605";
+   position: absolute;
+}

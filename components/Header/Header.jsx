@@ -2,15 +2,14 @@ import {element} from 'deku'
 import {link} from '../../Router'
 import styles from './Header.css'
 
-// remove this, it should pick a component by name...
+/* 
+  TODO: 
+  The router should have the defined list of component names, 
+  Should just need should send a component name to link
+*/
 import Surveys from '../Surveys/Surveys.jsx'
 
-
 export default {
-
-  onCreate ({ path }) {
-    console.log(path)
-  },
 
   render({context, dispatch}) {
 

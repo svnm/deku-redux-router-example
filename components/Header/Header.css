@@ -1,7 +1,10 @@
 .header {
+    composes: outerMargin from '../../styles/common.css';
 }
 .text {
 	color: white;
+	text-transform: uppercase;
+	font-size: 40px;
 }
 .button {
     composes: button from '../../styles/common.css';
