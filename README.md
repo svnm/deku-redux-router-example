@@ -1,6 +1,6 @@
 # deku-redux-router-example
-an example of deku, redux and some very minimal routing
 
+- An example of deku, redux and some minimal routing
 - Uses a standalone Router, which may be possible to extend to a simple deku router.
 - Uses Deku 2.0.0, too bleeding edge
 - Not really sure how to test deku 2.0 components at this stage, apologies
