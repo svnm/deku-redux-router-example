@@ -5,6 +5,8 @@
 - Uses Deku 2.0.0, super awesome!
 - Not really sure how to test deku 2.0 components at this stage?
 
+![](https://raw.githubusercontent.com/StevenIseki/deku-redux-router-example/master/build/img/screenshot.png)
+
 ## dependencies
 
 * **deku** `2.0.0`  
