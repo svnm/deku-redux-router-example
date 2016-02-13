@@ -1,8 +1,6 @@
-import utils from '../utils'
 import * as types from '../constants'
 
-export function setParticipation(path, percent) {
-  percent = utils.toPercent(percent)
+export function setRating(path, percent) {
   let el = document.querySelector('#card' + path )
   let inner = el.querySelector('#inner')
   inner.style.width = percent
@@ -10,7 +8,7 @@ export function setParticipation(path, percent) {
   text.style.opacity = '1'
 
   return {
-    type: types.SET_PARTICIPATION,
+    type: types.SET_RATING,
     receivedAt: Date.now()
   }
 

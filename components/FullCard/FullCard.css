@@ -1,5 +1,5 @@
 @value colors: "../../styles/colors.css";
-@value white, black from colors;
+@value white, purple, black from colors;
 
 .card {
     composes: outerMargin from '../../styles/common.css';
@@ -27,7 +27,7 @@
 }
 
 .text {
-	color: #1380a0;
+	color: purple;
 	margin: 0;
 	padding-top: 15px;
 	text-transform: uppercase;

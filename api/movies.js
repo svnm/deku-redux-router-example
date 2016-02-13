@@ -8,17 +8,13 @@ router.get('/', function(req, res) {
   var data = {
     "results": [
       { 
-        "name": "Simple Survey",
+        "name": "Gleaming the Cube",
         "url": "/1",
-        "participant_count": 6,
-        "response_rate": 0.8333333333333334,
-        "submitted_response_count": 5
+        "rating": 0.93
       },
-      { "name": "Acme Engagement Survey",
+      { "name": "Prayer of the Rollerboys",
         "url": "/2",
-        "participant_count": 271,
-        "response_rate" :1.0,
-        "submitted_response_count":271
+        "rating": 0.95
       }
     ]
   }

@@ -1,15 +1,15 @@
 import {element} from 'deku'
-import {fetchSurvey} from '../../actions/survey'
+import {fetchMovie} from '../../actions/movie'
 import {getPathName} from '../../Router'
 import utils from '../../utils'
-import SurveyFullCard from '../SurveyFullCard/SurveyFullCard.jsx'
-import Header from '../Header/Header.jsx'
-import Loader from '../Loader/Loader.jsx'
+import FullCard from '../../components/FullCard/FullCard.jsx'
+import Header from '../../components/Header/Header.jsx'
+import Loader from '../../components/Loader/Loader.jsx'
 
 export default {
 
   onCreate ({ path, dispatch}) {
-    dispatch(fetchSurvey(location.pathname))
+    dispatch(fetchMovie(location.pathname))
   },
 
   render({context, dispatch}) {
@@ -22,13 +22,13 @@ export default {
 
     let component = null
 
-    if(utils.isEmpty(context.survey)){
+    if(utils.isEmpty(context.movie)){
       component = (<Loader />)
     } else {
 
-      /* survey results loaded */
+      /* results loaded */
       component = (
-        <SurveyFullCard {...context.survey} path='fullCard' />
+        <FullCard {...context.movie} path='fullCard' />
       )
     }
 

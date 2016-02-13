@@ -1,11 +1,11 @@
 import {combineReducers} from 'redux'
-import surveys from './surveys'
-import survey from './survey'
+import movies from './movies'
+import movie from './movie'
 import router from './router'
 
 const rootReducer = combineReducers({
-  surveys,
-  survey,
+  movies,
+  movie,
   router
 })
 

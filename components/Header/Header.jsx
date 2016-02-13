@@ -7,7 +7,7 @@ import styles from './Header.css'
   The router should have the defined list of component names, 
   Should just need should send a component name to link
 */
-import Surveys from '../Surveys/Surveys.jsx'
+import Movies from '../../containers/Movies/Movies.jsx'
 
 export default {
 
@@ -15,8 +15,8 @@ export default {
 
     return (
       <div class={styles.header}>
-        <h3 class={styles.text}>ACME Surveys</h3>
-        <a class={styles.button} onClick={() => dispatch(link('/', Surveys))}>ALL SURVEYS &nbsp;</a>
+        <h3 class={styles.text}>Movie Reviews</h3>
+        <a class={styles.button} onClick={() => dispatch(link('/', Movies))}>ALL MOVIES</a>
       </div>
     )
   }

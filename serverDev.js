@@ -8,24 +8,25 @@ var app = express();
 var compiler = webpack(config);
 
 app.use(dev(compiler, {publicPath: config.output.publicPath}));
+app.use('/build', express.static(__dirname + '/build'))
 
 /* api routes */
-var survey = require('./api/survey');
-app.use('/api/survey/:id', survey);
+var movie = require('./api/movie');
+app.use('/api/movie', movie);
 
-var surveys = require('./api/surveys');
-app.use('/api/surveys', surveys);
+var movies = require('./api/movies');
+app.use('/api/movies', movies);
 
 
 app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(3003, 'localhost', function(err) {
+app.listen(3000, 'localhost', function(err) {
   if (err) {
     console.log(err);
     return;
   }
 
-  console.log('Listening at http://localhost:3003');
+  console.log('Listening at http://localhost:3000');
 });
