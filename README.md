@@ -1,7 +1,5 @@
 # deku-redux-router-example
 
-![](https://raw.githubusercontent.com/StevenIseki/deku-redux-router-example/master/build/img/screenshot.png)
-
 - An example of deku, redux and some minimal routing
 - Uses a standalone Router, which may be possible to extend to a simple deku router.
 - Uses Deku 2.0.0, super awesome!
