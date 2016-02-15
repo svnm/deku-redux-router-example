@@ -1,11 +1,11 @@
 import test from 'ava'
 import {isEmptyString, isEmpty, toPercent} from '../utils'
 
-test('util isEmptyString returns true for an empty string', t => {
+test('util isEmptyString returns true for empty string', t => {
     t.is(isEmptyString(''), true)
 });
 
-test('util isEmpty returns true for an empty object', t => {
+test('util isEmpty returns true for empty object', t => {
     t.is(isEmpty({}), true)
 });
 
