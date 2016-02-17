@@ -26,7 +26,9 @@ module.exports = {
     autoprefixer({ browsers: ['last 2 versions'] }), values 
   ],
   plugins: [
-    new ExtractTextPlugin('style.css', { allChunks: true })
+    new ExtractTextPlugin('style.css', { allChunks: true }),
+    new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"production"' }),
+    new webpack.optimize.UglifyJsPlugin({ compressor: { warnings: false }, sourceMap: false, mangle: false, minimize: true })
   ]
 
 };

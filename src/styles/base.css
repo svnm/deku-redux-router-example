@@ -1,0 +1,10 @@
+body {
+	background: #444;
+	height: 100vh;
+	color: #000;
+}
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

@@ -19,7 +19,7 @@ router.get('/:id', function(req, res) {
       "results": { 
         "name": "Gleaming the Cube",
         "rating": 0.93,
-        "imageUrl": "/build/img/gleaming.jpg",
+        "imageUrl": "/public/img/gleaming.jpg",
         "reviews": [
           {
             "name": "Steven Iseki",
@@ -41,7 +41,7 @@ router.get('/:id', function(req, res) {
       "results": { 
         "name": "Prayer of the Rollerboys",
         "rating": 0.95,
-        "imageUrl": "/build/img/prayer.jpg",
+        "imageUrl": "/public/img/prayer.jpg",
         "reviews": [
           {
             "name": "Steven Iseki",
